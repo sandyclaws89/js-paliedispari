@@ -43,14 +43,23 @@
 // CON IF VEDO CHI HA VINTO CONTROLLANDO IL MAGGIORE
 
 let oddEven = prompt("Odd or even?");
-NON HO CAPITO COME SI USA TO LOWER CASE
-oddEven = oddEven.toLowerCase;
-console.log(oddEven)
+oddEven = oddEven.toLowerCase();
+while (oddEven != "odd" && oddEven != "even"){
+    alert("You must insert only \"odd\" or \"even\"");
+    oddEven = prompt("Odd or even?");
+}
+let num = parseInt(prompt("Insert your number between 1 and 5"));
+while ( num <1 || num > 5){
+    alert("You must insert a number between 1 and 5");
+    num = parseInt(prompt("Insert your number"));
+}
+// PERCHE' NON ME LI STA CONVERTNEDO IN NUMERI INTERI CON PARSE INT?
+// console.log("ok");
 
 
-// if (oddEven = "Odd"){
+// if (oddEven == "odd"){
 //     console.log ("ok")
-// }
+// } else { console.log ("Insert Odd or Even")}
 // let num = prompt ("Insert your number");
 
 // let computerNumber = randomFunction(1, 5);
