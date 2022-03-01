@@ -1,4 +1,22 @@
 
+
+let jsButton = document.getElementById('htmlbutton');
+
+jsButton. addEventListener ('click', getDataFunction);
+
+function getDataFunction() {
+    let jsInput = document.getElementById ('htmlinput');
+    // console.log(jsInput.value)
+
+}
+// console.log(jsButton)
+
+// let test1 = 0 
+let test1= test1. addEventListener('click', getDataFunction);
+console.log(test1)
+
+
+
 // let arrWordGrow= [];
 // let arrWordDecreasing = [];
 // let word = prompt("Insert word");
@@ -42,50 +60,50 @@
 
 // CON IF VEDO CHI HA VINTO CONTROLLANDO IL MAGGIORE
 
-// DEFAULT COMPUTER SE PARI
-let computerSide = "odd";
-computerSide = computerSide.toLowerCase();
+// // DEFAULT COMPUTER SE PARI
+// let computerSide = "odd";
+// computerSide = computerSide.toLowerCase();
 
-// SCELTA DELL'UTENTE SE PARI O DISPARI CON CONTROLLO
-let oddEven = prompt("Odd or even?");
-oddEven = oddEven.toLowerCase();
-while (oddEven != "odd" && oddEven != "even"){
-    alert("You must insert only \"odd\" or \"even\"");
-    oddEven = prompt("Odd or even?");
-}
-// ASSEGNAZIONE ALTRA SCELTA (PARI O DISPARI) AL COMPUTER 
-if (oddEven == "odd") {
-    computerSide = "even"
-} 
+// // SCELTA DELL'UTENTE SE PARI O DISPARI CON CONTROLLO
+// let oddEven = prompt("Odd or even?");
+// oddEven = oddEven.toLowerCase();
+// while (oddEven != "odd" && oddEven != "even"){
+//     alert("You must insert only \"odd\" or \"even\"");
+//     oddEven = prompt("Odd or even?");
+// }
+// // ASSEGNAZIONE ALTRA SCELTA (PARI O DISPARI) AL COMPUTER 
+// if (oddEven == "odd") {
+//     computerSide = "even"
+// } 
 
-// SCELTA DEL NUMERO DELL'UTENTE CON CONTROLLO ISNAN
-let num = parseInt(prompt("Insert your number between 1 and 5"));
-while (num <1 || num > 5 || isNaN(num) == true){
-    alert("You must insert a number between 1 and 5");
-    num = parseInt(prompt("Insert your number"));
-}
-console.log(`Your choice is ${num}`);
+// // SCELTA DEL NUMERO DELL'UTENTE CON CONTROLLO ISNAN
+// let num = parseInt(prompt("Insert your number between 1 and 5"));
+// while (num <1 || num > 5 || isNaN(num) == true){
+//     alert("You must insert a number between 1 and 5");
+//     num = parseInt(prompt("Insert your number"));
+// }
+// console.log(`Your choice is ${num}`);
 
-// FUNZIONE NUMERO CASUALE CON CUI SOMMARE QUELLO DELL'UTENTE 
-let computerNumber = randomFunction(1, 5);
-console.log(`Computer choice is ${computerNumber}`);
-function randomFunction(min, max){
-    return functionNumber = Math.floor(Math.random() * (5)) + 1;
-}
+// // FUNZIONE NUMERO CASUALE CON CUI SOMMARE QUELLO DELL'UTENTE 
+// let computerNumber = randomFunction(1, 5);
+// console.log(`Computer choice is ${computerNumber}`);
+// function randomFunction(min, max){
+//     return functionNumber = Math.floor(Math.random() * (5)) + 1;
+// }
 
-// FUNZIONE SOMMA ALGEBRICA 
-let sum = sumFunction(num, computerNumber);
-console.log (`The sum is ${sum}`)
-function sumFunction (userNum, computerNum){
-    return sumTemp = userNum + computerNum;
-}
+// // FUNZIONE SOMMA ALGEBRICA 
+// let sum = sumFunction(num, computerNumber);
+// console.log (`The sum is ${sum}`)
+// function sumFunction (userNum, computerNum){
+//     return sumTemp = userNum + computerNum;
+// }
 
-// FUNZIONE CONFRONTO NUMERI SE PARI O DISPARI
-let game = oddEvenFunction (oddEven, computerSide);
-function oddEvenFunction(oddEvenFunction, computerSideFunction){
-    if (sum % 2 == 0 && computerSide== "odd"){
-        console.log ("you lose");
-    } else {
-        console.log ("you win");
-    }
-}
+// // FUNZIONE CONFRONTO NUMERI SE PARI O DISPARI
+// let game = oddEvenFunction (oddEven, computerSide);
+// function oddEvenFunction(oddEvenFunction, computerSideFunction){
+//     if (sum % 2 == 0 && computerSide== "odd"){
+//         console.log ("you lose");
+//     } else {
+//         console.log ("you win");
+//     }
+// }
