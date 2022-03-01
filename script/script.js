@@ -1,6 +1,8 @@
 
 let arrWordGrow= [];
 let arrWordDecreasing = [];
+let control = false;
+let arrTest =[];
 let word = prompt("Insert word");
 palindromFunction(word);
 // for (let i=0; i < word.length; i++){
@@ -22,20 +24,33 @@ function palindromFunction(functionWord) {
         
     }    
     // console.log (arrWordGrow);
-
     for (let n=functionWord.length; n >0 ; n--) {
             arrWordDecreasing.push(functionWord[n-1]);
     }
     // console.log (arrWordDecreasing);
+    for (let i=0; i < word.length; i++){
+        // console.log (arrWordGrow[i])
+        // console.log (arrWordDecreasing)
+        if (arrWordGrow[i] == arrWordDecreasing[i]) {
+            // control = true; 
+            // console.log(control)
+            if (true == word.length){
+                console.log ("funziona")
+            } 
+         } else {
+             control=false;
+             console.log(control)}
+        //  else {
+        //     control=1;
+        // }
+        
+       
 
-    for (i=0; i < word.length; i++){
-
-
-        if ((arrWordGrow[i] == arrWordDecreasing[i]) == word.length){
-            console.log ("funziona!");
-        } else{
-            console.log ("non funziona!");
-        }
+        // if ((arrWordGrow[i] == arrWordDecreasing[i]) == word.length){
+        //     console.log ("funziona!");
+        // } else{
+        //     console.log ("non funziona!");
+        // }
 
 
         // control = arrWordGrow[i] == arrWordDecreasing[i];
@@ -48,6 +63,7 @@ function palindromFunction(functionWord) {
     // if ( arrWordGrow[i] == arrWordDecreasing[i])  {
         // console.log(true)
     // }
-    }
+    } 
+    // console.log (control)
 
 }
