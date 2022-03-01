@@ -1,69 +1,43 @@
 
 let arrWordGrow= [];
 let arrWordDecreasing = [];
-let control = false;
-let arrTest =[];
 let word = prompt("Insert word");
 palindromFunction(word);
-// for (let i=0; i < word.length; i++){
-// arrWordGrow.push(word[i]);
-
-// }
-// console.log (arrWordGrow);
-
-// for (let i=word.length; i >0 ; i--) {
-//     arrWordDecreasing.push(word[i-1]);
-// }
-// console.log (arrWordDecreasing);
-
-
+if (palindromFunction(word)) {
+    console.log ("palindroma")
+} else { console.log ("non palindroma")}
 
 function palindromFunction(functionWord) {
     for (let i=0; i < functionWord.length; i++){
         arrWordGrow.push(functionWord[i]);
-        
     }    
-    // console.log (arrWordGrow);
     for (let n=functionWord.length; n >0 ; n--) {
             arrWordDecreasing.push(functionWord[n-1]);
     }
-    // console.log (arrWordDecreasing);
     for (let i=0; i < word.length; i++){
-        // console.log (arrWordGrow[i])
-        // console.log (arrWordDecreasing)
         if (arrWordGrow[i] == arrWordDecreasing[i]) {
-            // control = true; 
-            // console.log(control)
-            if (true == word.length){
-                console.log ("funziona")
-            } 
-         } else {
-             control=false;
-             console.log(control)}
-        //  else {
-        //     control=1;
-        // }
-        
-       
-
-        // if ((arrWordGrow[i] == arrWordDecreasing[i]) == word.length){
-        //     console.log ("funziona!");
-        // } else{
-        //     console.log ("non funziona!");
-        // }
-
-
-        // control = arrWordGrow[i] == arrWordDecreasing[i];
-        // console.log(control);
-        // if (console = word.length) {
-        //     console.log("ciao");
-        // }
-    // console.log(arrWordGrow[i], arrWordDecreasing[i]);
-    // console.log(arrWordDecreasing[i]);
-    // if ( arrWordGrow[i] == arrWordDecreasing[i])  {
-        // console.log(true)
-    // }
-    } 
-    // console.log (control)
-
+            return true;
+        } else { 
+           return false;
+        }
+    }
 }
+
+// Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
+
+// PSEUDOCODIFICA
+// CHIEDO SE PARI O DISPARI ALL'UTENTE
+// CHIEDO IL NUMERO ALL'UTENTE
+// ASSEGNO A VARIABILE IL NUMERO CAUSALE  (CON FUNZIONE)
+// APRO LA FUNZIONE
+//     CON LA FORMULA MATH FLOOR GENERO UN NUMERO RANDOM
+// SOMMA DUE NUMERI 
+// APRO FUNZIONE
+//     VEDO SE E' PARI O DISPARI CON %2
+
+// CON IF VEDO CHI HA VINTO CONTROLLANDO IL MAGGIORE
